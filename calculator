@@ -1,0 +1,194 @@
+package calculus;
+
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Calculator extends JFrame {
+
+	// instance variables
+	private static final String THIS_TEXT = "ENTER-TEXT-HERE";
+	private static final String THIS_BUTTON = "BUTTON";
+
+	public static void main(String[] args) {
+		new Calculator();
+	}
+
+	public Calculator() {
+		JFrame platform = new JFrame("Calculator");
+		platform.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		platform.setSize(500, 500);
+
+		// add a panel to the JFrame
+		JPanel CalcPanel = new JPanel();
+		CalcPanel.setLayout(new GridBagLayout());
+
+		// Label, textField, and button components to add
+		JLabel label1 = new JLabel("Label");
+		final JTextField text = new JTextField();
+		text.setActionCommand(THIS_TEXT);
+
+		// declare the JButton components
+		JButton press0 = new JButton("0");
+		press0.setActionCommand(THIS_BUTTON);
+		// Declare button 1
+		JButton press1 = new JButton("1");
+		press1.setActionCommand(THIS_BUTTON);
+		// Declare button 2
+		JButton press2 = new JButton("2");
+		press2.setActionCommand(THIS_BUTTON);
+		// Declare button 3
+		JButton press3 = new JButton("3");
+		press3.setActionCommand(THIS_BUTTON);
+		// Declare button 4
+		JButton press4 = new JButton("4");
+		press4.setActionCommand(THIS_BUTTON);
+		// Declare button 5
+		JButton press5 = new JButton("5");
+		press5.setActionCommand(THIS_BUTTON);
+		// Declare button 6
+		JButton press6 = new JButton("6");
+		press6.setActionCommand(THIS_BUTTON);
+		// Declare button 7
+		JButton press7 = new JButton("7");
+		press7.setActionCommand(THIS_BUTTON);
+		// Declare button 8
+		JButton press8 = new JButton("8");
+		press8.setActionCommand(THIS_BUTTON);
+		// Declare button 9
+		JButton press9 = new JButton("9");
+		press9.setActionCommand(THIS_BUTTON);
+		// Declare button 10
+		JButton press10 = new JButton("X");
+		press10.setActionCommand(THIS_BUTTON);
+		// Declare button 11
+		JButton press11 = new JButton("+");
+		press11.setActionCommand(THIS_BUTTON);
+		// Declare button 12
+		JButton press12 = new JButton("-");
+		press12.setActionCommand(THIS_BUTTON);
+		// Declare button 13
+		JButton press13 = new JButton("/");
+		press13.setActionCommand(THIS_BUTTON);
+		
+		// Declare button 14
+		JButton press14 = new JButton(".");
+		press14.setActionCommand(THIS_BUTTON);
+		// set the Grid constraints object upJButton press = new JButton("0");
+
+		GridBagConstraints c = new GridBagConstraints();
+
+		
+
+		// set the grid constraints for the Text
+		c = new GridBagConstraints();
+
+		c.gridx = 2;
+		c.gridy = 0;
+		c.ipadx = 250;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(text, c);
+
+		// set the grid constraints for the button
+		c = new GridBagConstraints();
+
+		// button 0 constraints
+		c.gridx = 1;
+		c.gridy = 4;
+		c.insets = new Insets(0,0,0,0);
+		CalcPanel.add(press0, c);
+		
+		// button 1 constraints
+		c = new GridBagConstraints();
+		c.gridx = 2;
+		c.gridy = 4;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press1, c);
+		
+		// button 2 constraints
+		c = new GridBagConstraints();
+		c.gridx = 3;
+		c.gridy = 4;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press2, c);
+		
+		// button 3 constraints
+		c = new GridBagConstraints();
+		c.gridx = 4;
+		c.gridy = 4;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press3, c);	
+		// button 4 constraints
+		c = new GridBagConstraints();
+		c.gridx = 1;
+		c.gridy = 3;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press4, c);
+		// button 5 constraints
+		c = new GridBagConstraints();
+		c.gridx = 2;
+		c.gridy = 3;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press5, c);
+		// button 6 constraints
+		c = new GridBagConstraints();
+		c.gridx = 3;
+		c.gridy = 3;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press6, c);
+		// button 7 constraints
+		c = new GridBagConstraints();
+		c.gridx = 4;
+		c.gridy = 3;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press7, c);
+		// button 8 constraints
+		c = new GridBagConstraints();
+		c.gridx = 1;
+		c.gridy = 2;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press8, c);
+		// button 9 constraints
+		c = new GridBagConstraints();
+		c.gridx = 2;
+		c.gridy = 2;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press9, c);
+		// button 10 constraints
+		c = new GridBagConstraints();
+		c.gridx = 3;
+		c.gridy = 2;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press10, c);
+		// button 11 constraints
+		c = new GridBagConstraints();
+		c.gridx = 4;
+		c.gridy = 2;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press11, c);
+		// button 12 constraints
+		c = new GridBagConstraints();
+		c.gridx = 1;
+		c.gridy = 1;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press12, c);
+		// button 13 constraints
+		c = new GridBagConstraints();
+		c.gridx = 2;
+		c.gridy = 1;
+		c.insets = new Insets(0, 0, 0, 0);
+		CalcPanel.add(press13, c);
+
+		// add the CalcPanel to the frame
+		platform.add(CalcPanel);
+
+		platform.setVisible(true);
+	}
+
+}
