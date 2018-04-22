@@ -169,72 +169,84 @@ public class Calculator extends JFrame implements ActionListener {
 		c.gridy = 4;
 		c.insets = new Insets(0, 0, 15, 0);
 		CalcPanel.add(press3, c);
+		
 		// button 4 constraints
 		c = new GridBagConstraints();
 		c.gridx = 0;
 		c.gridy = 3;
 		c.insets = new Insets(0, 0, 0, 0);
 		CalcPanel.add(press4, c);
+		
 		// button 5 constraints
 		c = new GridBagConstraints();
 		c.gridx = 1;
 		c.gridy = 3;
 		c.insets = new Insets(0, 0, 0, 0);
 		CalcPanel.add(press5, c);
+		
 		// button 6 constraints
 		c = new GridBagConstraints();
 		c.gridx = 2;
 		c.gridy = 3;
 		c.insets = new Insets(0, 0, 0, 0);
 		CalcPanel.add(press6, c);
+		
 		// button 7 constraints
 		c = new GridBagConstraints();
 		c.gridx = 0;
 		c.gridy = 2;
 		c.insets = new Insets(0, 0, 15, 0);
 		CalcPanel.add(press7, c);
+		
 		// button 8 constraints
 		c = new GridBagConstraints();
 		c.gridx = 1;
 		c.gridy = 2;
 		c.insets = new Insets(0, 0, 0, 0);
 		CalcPanel.add(press8, c);
+		
 		// button 9 constraints
 		c = new GridBagConstraints();
 		c.gridx = 2;
 		c.gridy = 2;
 		c.insets = new Insets(0, 0, 0, 0);
 		CalcPanel.add(press9, c);
-		// button X constraints
+		
+		// button 10 constraints
 		c = new GridBagConstraints();
 		c.gridx = 3;
 		c.gridy = 3;
 		c.insets = new Insets(0, 0, 0, 0);
 		CalcPanel.add(press10, c);
-		// button + constraints
+		
+		// button "+" the add button constraints
 		c = new GridBagConstraints();
 		c.gridx = 3;
 		c.gridy = 5;
 		c.insets = new Insets(0, 0, 0, 0);
 		CalcPanel.add(press11, c);
-		// button - constraints
+		
+		// the minus "-" button constraints
 		c = new GridBagConstraints();
 		c.gridx = 3;
 		c.gridy = 4;
 		c.insets = new Insets(0, 0, 0, 0);
 		CalcPanel.add(press12, c);
-		// button / constraints
+		
+		// the division button "/" constraints
 		c = new GridBagConstraints();
 		c.gridx = 3;
 		c.gridy = 2;
 		c.insets = new Insets(0, 0, 0, 0);
 		CalcPanel.add(press13, c);
-		// Declare button 14 as .
+		
+		// Declare button 14 as decimal "."
 		c = new GridBagConstraints();
 		c.gridx = 2;
 		c.gridy = 5;
 		c.insets = new Insets(0, 0, 0, 0);
 		CalcPanel.add(press14, c);
+		
 		// Declare button 15 as CLR
 		c = new GridBagConstraints();
 		c.gridx = 0;
@@ -242,7 +254,7 @@ public class Calculator extends JFrame implements ActionListener {
 		c.insets = new Insets(15, 0, 0, 0);
 		CalcPanel.add(press15, c);
 
-		// "Declare button 16 as %"
+		// "Declare button 16 as "%" modulus button to get remainder
 		c = new GridBagConstraints();
 		c.gridx = 6;
 		c.gridy = 4;
